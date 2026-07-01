@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+    --color-sapphire-50: #eceff8;
+    --color-sapphire-100: #dadff1;
+    --color-sapphire-200: #b5bfe3;
+    --color-sapphire-300: #8fa0d6;
+    --color-sapphire-400: #6a80c8;
+    --color-sapphire-500: #4560ba;
+    --color-sapphire-600: #374d95;
+    --color-sapphire-700: #293a70;
+    --color-sapphire-800: #1c264a;
+    --color-sapphire-900: #0e1325;
+    --color-sapphire-950: #0a0d1a;
+
+    --color-midnight-violet-50: #f8edf8;
+    --color-midnight-violet-100: #f0dbf0;
+    --color-midnight-violet-200: #e2b6e2;
+    --color-midnight-violet-300: #d392d3;
+    --color-midnight-violet-400: #c56dc5;
+    --color-midnight-violet-500: #b649b6;
+    --color-midnight-violet-600: #923a92;
+    --color-midnight-violet-700: #6d2c6d;
+    --color-midnight-violet-800: #491d49;
+    --color-midnight-violet-900: #240f24;
+    --color-midnight-violet-950: #1a0a1a;
+
+    --color-evergreen-50: #e5fffd;
+    --color-evergreen-100: #ccfffb;
+    --color-evergreen-200: #99fff7;
+    --color-evergreen-300: #66fff2;
+    --color-evergreen-400: #33ffee;
+    --color-evergreen-500: #00ffea;
+    --color-evergreen-600: #00ccbb;
+    --color-evergreen-700: #00998c;
+    --color-evergreen-800: #00665e;
+    --color-evergreen-900: #00332f;
+    --color-evergreen-950: #002421;
+
+    --color-cool-steel-50: #f0f3f5;
+    --color-cool-steel-100: #e1e7ea;
+    --color-cool-steel-200: #c2cfd6;
+    --color-cool-steel-300: #a4b7c1;
+    --color-cool-steel-400: #869fac;
+    --color-cool-steel-500: #678898;
+    --color-cool-steel-600: #536c79;
+    --color-cool-steel-700: #3e515b;
+    --color-cool-steel-800: #29363d;
+    --color-cool-steel-900: #151b1e;
+    --color-cool-steel-950: #0e1315;
+
+    --color-powder-petal-50: #f7f1ed;
+    --color-powder-petal-100: #f0e3db;
+    --color-powder-petal-200: #e1c6b7;
+    --color-powder-petal-300: #d2aa93;
+    --color-powder-petal-400: #c38e6f;
+    --color-powder-petal-500: #b4724b;
+    --color-powder-petal-600: #905b3c;
+    --color-powder-petal-700: #6c442d;
+    --color-powder-petal-800: #482d1e;
+    --color-powder-petal-900: #24170f;
+    --color-powder-petal-950: #19100b;
+}

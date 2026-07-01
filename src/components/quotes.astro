@@ -1,0 +1,20 @@
+---
+interface quotes {
+    speaker: string;
+    quote: string;
+    background: string;
+}
+const allQuotes: quotes[] = [
+    { speaker: "Louisoix", quote: "To ignore the plight of those one might conceivably save is not wisdom, it is indolence.", background: "bg-emerald-600" },
+    { speaker: "Javik", quote: "Stand amongst the ashes of a trillion dead souls, and ask the ghosts if honor matters. The silence is your answer.", background: "bg-red-600" },
+    { speaker: "Paarthurnax", quote: "What is better? To be born good, or to overcome your evil nature through great effort?", background: "bg-cool-steel-600" },
+];
+const rQuotes = Math.floor(Math.random() * allQuotes.length);
+const rQuote = allQuotes[rQuotes]
+---
+
+
+<div class={`w-xl border-4 border-sapphire-300 rounded-xl ${rQuote.background}`}>
+    <p>{rQuote.quote}</p>
+    <p class="text-right">---{rQuote.speaker}</p>
+</div>
