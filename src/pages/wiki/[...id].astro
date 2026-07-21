@@ -1,0 +1,22 @@
+---
+import WikiLayout from "../../layout/wikiLayout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+    const wikiEntries = await getCollection("wiki");
+    return wikiEntries.map(e => ({
+        params: { id: e.id },
+        props: { e },
+    }))
+}
+
+const { e } = Astro.props;
+const { Content } = await render(e)
+---
+
+<WikiLayout title={e.data.title}>
+    <section class="prose prose-p:leading-relaxed prose-p:text-evergreen-400 prose-h4:text-emerald-400 prose-li:text-evergreen-600 max-w-full">
+        <h1 class="text-center text-sky-600">{e.data.title}</h1>
+        <Content />
+    </section>
+</WikiLayout>

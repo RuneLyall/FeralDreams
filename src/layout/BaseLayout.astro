@@ -1,9 +1,14 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css"
+const { title } = Astro.props
 ---
 
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Feral Dreams {title}</title>
+    </head>
     <body class="min-h-screen bg-linear-to-b from-cool-steel-700 to-cool-steel-900 text-white">
         <div class=" flex flex-col w-full max-w-[80%] max-h-screen mx-auto">
             <Navbar />

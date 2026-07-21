@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+const digiList = ["weregarurumon", "wargreymon", "garurumon"];
+const digiTeam = await Promise.all(
+    digiList.map(async (n) => {
+        const res = await fetch(`https://digimon-api.vercel.app/api/digimon/name/${n}`)
+        return res.json();
+    })
+)
+---
+
+<BaseLayout>
+    {digiTeam.map((digi) => (
+        <div>
+            <h1>{digi[0].name}</h1>
+            <p><img src={digi[0].img} /></p>
+        </div>
+    ))}    
+</BaseLayout>

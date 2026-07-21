@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../layout/BaseLayout.astro";
+import { getCollection } from "astro:content";
+const wikiEntries = await getCollection("wiki");
+---
+
+<BaseLayout title="| Creature Wiki">
+    <div class="grid grid-cols-4">
+        <section class="grid grid-cols-4 gap-4 ">
+            { wikiEntries.map((entry) => (
+                <div><a href={`/wiki/${entry.id}`}>{entry.data.title}</a></div>
+            ))}
+        </section>
+    </div>
+</BaseLayout>

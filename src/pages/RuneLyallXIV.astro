@@ -1,0 +1,84 @@
+---
+
+import XivCard from '../components/xivCard.astro';
+import rawData from '../ephemeral/char.json';
+import CharacterLayout from '../layout/characterLayout.astro';
+interface jobDetails {
+  
+    icon: string;
+    txp: number;
+    xp: number;
+    role: string;
+    isFav?: boolean;
+    isSpecialist?: string;
+  
+}
+interface CharacterJson {
+  name: string;
+  jobs: {
+    [jobName: string]: jobDetails;
+  };
+}
+const charData = rawData as CharacterJson;
+
+const jobs = Object.entries(charData.jobs);
+const groupedJobs = Object.groupBy(jobs, ([jobName, jobData]) => jobData.role);
+const roleOrder = ["Tank", "Healer", "Melee DPS", "Ranged DPS", "Magical DPS", "Limited Job", "Gathering", "Crafter"]
+const sortedGroups = Object.entries(groupedJobs).sort(([roleA], [roleB]) => {
+  let indexA = roleOrder.indexOf(roleA);
+  let indexB = roleOrder.indexOf(roleB);
+  return indexA - indexB
+})
+const favJobs = sortedGroups.filter(([role, jobsInRole]) => {
+  return jobsInRole!.some(([jbName, jobData]) => jobData.isFav === true);
+})
+
+---
+
+<CharacterLayout>
+
+  <main class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center p-6 max-w-5xl mx-auto">
+    
+    <div class="pr-3">
+      <h2 class="text-2xl font-bold text-emerald-500 pb-4">Favorites</h2>
+      {
+        roleOrder.map((cRole) => {
+          const favsinRole = Object.entries(charData.jobs).filter(([jobName, jobData]) => {
+            return jobData.role === cRole && jobData.isFav === true;
+          });
+          return favsinRole.length > 0 && (
+            
+            <div class="py-1">
+              {
+                favsinRole.map(([jobName, jobData]) => (
+                  <XivCard job={jobName} icon={jobData.icon} role={jobData.role} />
+                ))
+              }
+            </div>
+          )
+        })
+      }
+      
+    </div>
+    <img src="/images/runeXIV.png" alt="Rune FFXIV character" width="400" height="600" class="border-2 rounded-2xl" />
+    
+  </main>
+  { 
+    sortedGroups.map(([role, jobsInRole]) => (
+      <section class="py-3">
+       <h4 class="text-1xl font-bold">{role}</h4>
+          <div class="grid grid-cols-4 gap-4 pb-3 pt-4">
+            {
+              jobsInRole!.map(([charJob, jobData]) => (
+                <XivCard job={charJob} icon={jobData.icon} role={jobData.role} />
+              ))
+            }
+          </div>
+        
+      </section>
+    ))
+  }
+  <footer>
+  <p>&copy; SQUARE ENIX CO., LTD. All Rights Reserved.</p>
+</footer>
+</CharacterLayout>

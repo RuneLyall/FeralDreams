@@ -1,0 +1,216 @@
+{
+    "name": "Rune Lyall",
+    "jobs": {
+        "Gunbreaker": {
+            "icon": "/ffxivicons/Gunbreaker.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Tank",
+            "isFav": true
+        },
+        "Alchemist": {
+            "icon": "/ffxivicons/Alchemist.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Crafter",
+            "isSpecialist": "?"
+        },
+        "Armorer": {
+            "icon": "/ffxivicons/Armorer.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Crafter",
+            "isSpecialist": "?"
+        },
+        "Blacksmith": {
+            "icon": "/ffxivicons/Blacksmith.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Crafter",
+            "isSpecialist": "?"
+        },
+        "Carpenter": {
+            "icon": "/ffxivicons/Carpenter.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Crafter",
+            "isSpecialist": "?"
+        },
+        "Culinarian": {
+            "icon": "/ffxivicons/Culinarian.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Crafter",
+            "isSpecialist": "?"
+        },
+        "Leatherworker": {
+            "icon": "/ffxivicons/Leatherworker.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Crafter",
+            "isSpecialist": "?"
+        },
+        "Weaver": {
+            "icon": "/ffxivicons/Weaver.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Crafter",
+            "isSpecialist": "?"
+        },
+        "Goldsmith": {
+            "icon": "/ffxivicons/Goldsmith.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Crafter",
+            "isSpecialist": "?"
+        },
+        "Astrologian": {
+            "icon": "/ffxivicons/Astrologian.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Healer"
+        },
+        "Bard": {
+            "icon": "/ffxivicons/Bard.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Ranged DPS"
+        },
+        "Dancer": {
+            "icon": "/ffxivicons/Dancer.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Ranged DPS",
+            "isFav": true
+        },
+        "Dark Knight": {
+            "icon": "/ffxivicons/DarkKnight.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Tank"
+        },
+        "Dragoon": {
+            "icon": "/ffxivicons/Dragoon.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Melee DPS"
+        },
+        "Machinist": {
+            "icon": "/ffxivicons/Machinist.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Ranged DPS"
+        },
+        "Monk": {
+            "icon": "/ffxivicons/Monk.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Melee DPS"
+        },
+        "Ninja": {
+            "icon": "/ffxivicons/Ninja.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Melee DPS"
+        },
+        "Paladin": {
+            "icon": "/ffxivicons/Paladin.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Tank"
+        },
+        "Reaper": {
+            "icon": "/ffxivicons/Reaper.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Melee DPS",
+            "isFav": true
+        },
+        "Samurai": {
+            "icon": "/ffxivicons/Samurai.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Melee DPS"
+        },
+        "Scholar": {
+            "icon": "/ffxivicons/Scholar.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Healer"
+        },
+        "Summoner": {
+            "icon": "/ffxivicons/Summoner.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Magical DPS",
+            "isFav": true
+        },
+        "Warrior": {
+            "icon": "/ffxivicons/Warrior.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Tank"
+        },
+        "White Mage": {
+            "icon": "/ffxivicons/WhiteMage.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Healer"
+        },
+        "Sage": {
+            "icon": "/ffxivicons/Sage.png",
+            "txp": 0,
+            "xp": 0,
+            "isFav": true,
+            "role": "Healer"
+        },
+        "Fisher": {
+            "icon": "/ffxivicons/Fisher.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Gathering"
+        },
+        "Miner": {
+            "icon": "/ffxivicons/Miner.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Gathering"
+        },
+        "Botanist": {
+            "icon": "/ffxivicons/Botanist.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Gathering"
+        },
+        "Pictomancer": {
+            "icon": "/ffxivicons/Pictomancer.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Magical DPS"
+        },
+        "Red Mage": {
+            "icon": "/ffxivicons/RedMage.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Magical DPS"
+        },
+        "Blue Mage": {
+            "icon": "/ffxivicons/BlueMage.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Limited Job"
+        },
+        "Black Mage": {
+            "icon": "/ffxivicons/BlackMage.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Magical DPS"
+        },
+        "Viper": {
+            "icon": "/ffxivicons/Viper.png",
+            "txp": 0,
+            "xp": 0,
+            "role": "Melee DPS"
+        }
+    }
+}

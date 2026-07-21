@@ -1,9 +1,27 @@
 ---
 import FallingLayout from "../layout/FallingLayout.astro";
+import * as pageContent from "../content/main/falling.mdx";
+const { title } = pageContent.frontmatter
+const Content = pageContent.Content
+
+const proj = [
+    { name: "Creature Wiki", url: "/wiki" },
+    { name: "Text Adventure (Coming ..someday)", url: "/howling" },
+    { name: "My Git?", url: "#" }
+]
 ---
 
 <FallingLayout>
-    <h1 class="text-center text-sapphire-500 drop-shadow-md text-4xl pb-6">Welcome to the Expanse</h1>
-    <p class="leading-relaxed py-2">Ok, take a breath, I realize you weren't expecting to find yourself in an endless expanse. Calmly now, just let your feet land, it might not seem like it but you can stand here.</p>
-    <p class="leading-relaxed py-2">Now that you're steady, welcome to the place where things come to just, be. This is the home of my projects, my wiki, photos and random snippits of stuff, eventually I want to have a text adventure you can all play, but for now, this is just the start. </p>
+    <main class="prose prose-h3:border-b-2 prose-h3:border-black prose-h3:text-sapphire-500 prose-h3:text-4xl prose-h3:text-center prose-invert max-w-full">
+        <h3>{title}</h3>
+        <Content />
+        <ul class="list-none">
+            {proj.map((p) => (
+                <li>
+                    <a href={p.url} class="text-emerald-500 underline hover:text-amber-200 transition-colors">{p.name}</a>
+                </li>
+            ))}
+        </ul>
+    </main>
 </FallingLayout>
+

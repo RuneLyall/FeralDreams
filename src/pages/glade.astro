@@ -1,12 +1,18 @@
 ---
 import GladeLayout from "../layout/gladeLayout.astro"
 import Quotes from "../components/quotes.astro"
+
+import * as pageContent from '../content/main/glade.mdx' 
+const { title } = pageContent.frontmatter;
+const Content = pageContent.Content;
 ---
 
 <GladeLayout>
-    <h1 class="text-4xl text-amber-600 text-center font-bold pb-4">Welcome to the Glade</h1>
-    <p>The wind welcomes you to this, the Glade, my little sanctuary. This place where the wind is warm, the night sky flits through the leaves above and the sound of water can be heard is where I come to let my dreams find form.</p> 
-    <p>Here you will find the things that mean something to me, sometimes they will be simple and small, other times large and important. For now, I bid you welcome, relax, enjoy your stay.</p>
+    
+    <main class="prose prose-h3:border-b-2 prose-h3:border-black prose-h3:text-midnight-violet-700 prose-h3:text-4xl prose-h3:text-center prose-p:text-evergreen-300 prose-p:leading-relaxed prose-invert max-w-full">
+        <h3>{title}</h3>
+        <Content />
+    </main>
+    
     <div class="justify-end align-bottom flex pt-10"><Quotes /></div>
 </GladeLayout>
-
