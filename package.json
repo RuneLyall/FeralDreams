@@ -14,7 +14,6 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^14.1.4",
     "@astrojs/mdx": "^7.0.3",
     "@astrojs/react": "^6.0.1",
     "@tailwindcss/vite": "^4.3.0",
@@ -26,7 +25,8 @@
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
+    "@astrojs/cloudflare": "^14.1.4",
     "@tailwindcss/typography": "^0.5.20",
-    "wrangler": "^4.113.0"
+    "wrangler": "^4.15.2"
   }
 }
