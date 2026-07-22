@@ -1,8 +1,5 @@
 ---
 import FallingLayout from "../layout/FallingLayout.astro";
-import * as pageContent from "../content/main/falling.mdx";
-const { title } = pageContent.frontmatter
-const Content = pageContent.Content
 
 const proj = [
     { name: "Creature Wiki", url: "/wiki" },
@@ -12,9 +9,11 @@ const proj = [
 ---
 
 <FallingLayout>
-    <main class="prose prose-h3:border-b-2 prose-h3:border-black prose-h3:text-sapphire-500 prose-h3:text-4xl prose-h3:text-center prose-invert max-w-full">
-        <h3>{title}</h3>
-        <Content />
+    <main class="text-sapphire-300">
+        <h1 class="text-center text-4xl text-indigo-300 text-shadow-2xs border-b-2 border-cool-steel-300">Falling...</h1>
+        <p class="leading-relaxed p-3">So, you've found your way here, no it's ok, you won't fall forever, take a breath, close your eyes, breathe out. There ya go, see, you can stand now. This place is, well let's call it a evolving space. It's empty, but it's also the most full of anywhere else that exists within this little space away from it all. This is where the creative side of what gets made comes to live. For now it's just this, a space, not much to look at for sure well, unless you like endless expanses of black and stars. As time goes on the stars will get brighter, and each star represents another little piece of something that has been made.</p>
+
+        <p class="leading-relaxed p-3">For now though, please, stay, enjoy yourself, as the projects get started and completed, this place will alter itself to match so, come back once in a while if you want, see what's new.</p>
         <ul class="list-none">
             {proj.map((p) => (
                 <li>

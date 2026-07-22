@@ -1,14 +1,15 @@
 ---
 import AboutLayout from "../layout/AboutLayout.astro";
-import * as pageContent from "../content/main/about.mdx";
-const { title } = pageContent.frontmatter;
-const Content = pageContent.Content
 ---
 
 <AboutLayout>
-    <div class="prose max-w-full prose-p:leading-relaxed prose-p:text-evergreen-700 prose-img:object-cover prose-img:rounded-full">
-    <h3 class="text-4xl text-cool-steel-400 text-center border-b-2 border-sapphire-500 pb-2">{title}</h3>
-    <Content />
-    </div>
+    <main>
+        <h1 class="text-center text-4xl font-bold text-emerald-500 border-b-2 border-b-midnight-violet-700">About the Wolf</h1>
+        <span class="m-auto flex align-middle justify-center">
+            <img src="/images/RunePabout.jpg" alt="Rune Badge" class="w-28 h-28 rounded-full border-3 border-emerald-500/40 shadow-lg shadow-black/30" />
+        </span>
+        
+        <p class="leading-relaxed py-2">Well, guess you wanna know more about me eh? Ok I can work with that, I'm Rune, it's nice to meetcha, depending on why yer here I'm either a hyperactive doofus of a furry, who really doesn't know what to make of himself sometimes, or I'm someone who just likes to try to make things, websites, games, someday art and even want to try music. For now though I'm just a dabbler, I don't have anything "finished" that I want to show you but as you explore you might run into a lotta things that are in states of development. </p>
+        <p class="leading-relaxed py-2">The furry side of me is a Wolf, Dragon, Bat hybrid, ya ya I know I'm mixed up, but at the same time it's just who I am, my characters full name is Rune Lyall, obviously, he had a middle name once but it doens't fit easy so I dropped it. Ummmm ... I don't really have much else to say, though if you want to know anything feel free to ask, there will be ways to get in touch with me somewhere around here.</p>
+    </main>
 </AboutLayout>
-
